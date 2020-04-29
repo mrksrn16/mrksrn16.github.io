@@ -1,0 +1,167 @@
+// header
+header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    .navbar {
+        padding: 0;
+    }
+    .navbar-collapse {
+        margin-left: auto;
+        flex-grow: initial;
+    }
+    .logo {
+        font-family: 'Gotham Bold';
+        margin: 0;
+    }
+    .nav-link {
+        color: initial;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: initial;
+        padding: 10px;
+    }
+}
+
+// blocks
+.intro-block, footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.about-block, .works-block, .contact-block {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.works-item {
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Gotham Bold';
+    color: #999;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+
+    &:hover {
+        background: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+    }
+    &.moggvisuals:hover {
+        background: #f25826;
+        border-color: #f25826;
+    }
+    &.axeia:hover {
+        background: #024685;
+        border-color: #024685;
+    }
+    &.phillife:hover {
+        background: #4a5f98;
+        border-color: #4a5f98;
+    }
+    &.ftw:hover {
+        background: #900047;
+        border-color: #900047;
+    }
+    &.kickstart:hover {
+        background: #2fa837;
+        border-color: #2fa837;
+    }
+    &.sobida:hover {
+        background: #333;
+        border-color: #333;;
+    }
+}
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 20px;
+    i {
+        font-size: 20px;
+    }
+    > div {
+        padding-left: 10px;
+    }
+    h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+}
+
+// footer
+footer {
+    .copyright {
+        font-size: 14px;
+        font-family: 'Gotham Light';
+    }
+}
+// override bootstrap components
+
+// buttons
+.btn {
+    border-radius: 0;
+    padding: 8px 13px;
+    font-family: 'Gotham Bold';
+    text-transform: uppercase;
+}
+
+// pills
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background: #fff;
+    color: inherit;
+    font-family: 'Gotham Bold';
+}
+.nav-pills .nav-link {
+    color: #666;
+}
+
+// utilities
+.highlight {
+    background: #def2f1;
+    padding: 5px;
+}
+.img-placeholder {
+    width: 300px;
+    height: 300px;
+    background: #def2f1;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #000;
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+    }
+    &:before {
+        left: -25px;
+        bottom: -25px;
+    }
+    &:after {
+        top: -25px;
+        right: -25px;
+
+    }
+}
+
+
+@media(min-width: 768px) {
+    .intro-block, footer {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    .about-block, .works-block, .contact-block {
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+    .section-description {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

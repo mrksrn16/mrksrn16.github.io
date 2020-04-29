@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('/assets/fonts/Gotham/GothamBook.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('/assets/fonts/Gotham/GothamBold.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('/assets/fonts/Gotham/GothamLight.ttf');
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Gotham Bold';
+}
+.section-title {
+    font-size: 40px;
+    
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+@media(min-width: 768px) {
+    .section-title {
+        font-size: 60px;
+    }
+}
