@@ -10880,6 +10880,11 @@ header .navbar-light .navbar-nav .nav-link {
   border-color: var(--primary);
 }
 
+.works-item.crimson:hover {
+  background: #A6192E;
+  border-color: #A6192E;
+}
+
 .works-item.moggvisuals:hover {
   background: #f25826;
   border-color: #f25826;

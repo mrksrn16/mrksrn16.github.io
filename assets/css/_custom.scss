@@ -49,6 +49,10 @@ header {
         color: #fff;
         border-color: var(--primary);
     }
+    &.crimson:hover {
+        background: #A6192E;
+        border-color: #A6192E;
+    }
     &.moggvisuals:hover {
         background: #f25826;
         border-color: #f25826;
