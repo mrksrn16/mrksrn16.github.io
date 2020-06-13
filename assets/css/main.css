@@ -10890,6 +10890,11 @@ header .navbar-light .navbar-nav .nav-link {
   border-color: #f25826;
 }
 
+.works-item.gmgvisasolutions:hover {
+  background: #009ace;
+  border-color: #009ace;
+}
+
 .works-item.axeia:hover {
   background: #024685;
   border-color: #024685;
