@@ -10769,10 +10769,16 @@ html {
 }
 
 body {
-  font-size: 18px;
+  font-size: 20px;
   background-color: #feffff;
   color: #17252a;
   font-family: 'Gotham';
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
 }
 
 @font-face {
@@ -10803,7 +10809,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
@@ -10853,73 +10859,6 @@ header .navbar-light .navbar-nav .nav-link {
   margin-bottom: 30px;
 }
 
-.works-item {
-  border: 1px solid #eee;
-  border-radius: 0;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-family: 'Gotham Bold';
-  color: #999;
-  min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.works-item:hover {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-}
-
-.works-item.crimson:hover {
-  background: #A6192E;
-  border-color: #A6192E;
-}
-
-.works-item.moggvisuals:hover {
-  background: #f25826;
-  border-color: #f25826;
-}
-
-.works-item.gmgvisasolutions:hover {
-  background: #009ace;
-  border-color: #009ace;
-}
-
-.works-item.axeia:hover {
-  background: #024685;
-  border-color: #024685;
-}
-
-.works-item.phillife:hover {
-  background: #4a5f98;
-  border-color: #4a5f98;
-}
-
-.works-item.ftw:hover {
-  background: #900047;
-  border-color: #900047;
-}
-
-.works-item.kickstart:hover {
-  background: #2fa837;
-  border-color: #2fa837;
-}
-
-.works-item.sobida:hover {
-  background: #333;
-  border-color: #333;
-}
-
 .section-description {
   text-align: center;
   margin-bottom: 30px;
@@ -10946,7 +10885,7 @@ header .navbar-light .navbar-nav .nav-link {
 }
 
 footer .copyright {
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Gotham Light';
 }
 
@@ -10973,29 +10912,71 @@ footer .copyright {
   padding: 5px;
 }
 
-.img-placeholder {
-  width: 300px;
-  height: 300px;
-  background: #def2f1;
+.project {
+  margin-bottom: 10px;
+}
+
+.project figure {
+  padding-top: 56.25%;
+  margin-bottom: 0;
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.img-placeholder:before, .img-placeholder:after {
-  content: '';
+.project figure:hover figcaption {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project .overlay-container {
   position: absolute;
-  border: 1px solid #000;
-  width: calc(100% - 50px);
-  height: calc(100% - 50px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
 }
 
-.img-placeholder:before {
-  left: -25px;
-  bottom: -25px;
+.project img {
+  max-width: 200px;
 }
 
-.img-placeholder:after {
-  top: -25px;
-  right: -25px;
+.project figcaption {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #ffff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.project .moggvisuals {
+  background-image: url("../imgs/moggvisuals-bg.jpg");
+}
+
+.project .moggvisuals .entry-media {
+  background: rgba(255, 224, 214, 0.6);
+}
+
+.project .moggvisuals figcaption {
+  background: #f1592a;
+}
+
+.project .gmgvisasolutions {
+  background-image: url("../imgs/gmgvisasolutions-bg.jpg");
+}
+
+.project .gmgvisasolutions .entry-media {
+  background: rgba(224, 230, 255, 0.6);
+}
+
+.project .gmgvisasolutions figcaption {
+  background: #25327b;
 }
 
 @media (min-width: 768px) {
@@ -11008,7 +10989,7 @@ footer .copyright {
     margin-bottom: 60px;
   }
   .section-description {
-    max-width: 50%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -2,8 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-size: 18px;
+    font-size: 20px;
     background-color: #feffff;
     color: #17252a;
     font-family: 'Gotham';
+}
+
+@media(min-width: 768px) {
+    body {
+        font-size: 24px;
+    }
 }
