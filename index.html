@@ -1,20 +1,38 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Erwin Serna - Portfolio</title>
+    <meta name="description" content="Mark Erwin Serna an inspired front-end developer">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="assets/css/main.css">
-
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="preload" href="assets/fonts/Gotham/GothamBook.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Gotham/GothamBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Gotham/GothamLight.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: 'Gotham';
+            src: url('assets/fonts/Gotham/GothamBook.ttf');
+        }
+        @font-face {
+            font-family: 'Gotham Bold';
+            src: url('assets/fonts/Gotham/GothamBold.ttf');
+        }
+
+        @font-face {
+            font-family: 'Gotham Light';
+            src: url('assets/fonts/Gotham/GothamLight.ttf');
+        }
+    </style>
 
 </head>
 
@@ -66,8 +84,7 @@
                         apps.</p>
                     <p>Proficient in responsive web design, mobile first approach principle and translating mockups to
                         interactive web and mobile applications. </p>
-                    <a href="assets/pdf/resume.pdf" target="_blank" rel="noopener"
-                        class="btn btn-dark">Download CV</a>
+                    <a href="assets/pdf/resume.pdf" target="_blank" rel="noopener" class="btn btn-dark">Download CV</a>
                 </div>
                 <div class="offset-md-1 col-md-5 d-flex align-items-center justify-content-center">
                     <img src="assets/imgs/avatar.png" alt="">
@@ -89,7 +106,8 @@
                             </div>
                             <figcaption class="overlay-container d-flex align-items-center justify-content-center">
                                 <p>Adelaide videographer for your weddings, events, promotions and vlogs.</p>
-                                <a href="https://moggvisuals.com.au/" target="_blank" rel="noopener" class="btn btn-outline-light">Visit Website</a>
+                                <a href="https://moggvisuals.com.au/" target="_blank" rel="noopener"
+                                    class="btn btn-outline-light">Visit Website</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -102,7 +120,8 @@
                             </div>
                             <figcaption class="overlay-container d-flex align-items-center justify-content-center">
                                 <p>Immigration & naturalization service in Blakeview, South Australia</p>
-                                <a href="https://gmgvisasolutions.com.au/" target="_blank" rel="noopener" class="btn btn-outline-light">Visit Website</a>
+                                <a href="https://gmgvisasolutions.com.au/" target="_blank" rel="noopener"
+                                    class="btn btn-outline-light">Visit Website</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -149,8 +168,7 @@
     <footer>
         <div class="container text-center">
             <div class="copyright">
-                Copyright ©
-                <script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved.
+                Copyright © <span id="year"></span> All rights reserved.
             </div>
         </div>
     </footer>
@@ -158,8 +176,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="assets/vendors/bootstrap-4.4.1/dist/js/bootstrap.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </body>
+<script>
+    $(function () {
+        $('#year').text(new Date().getFullYear());
+    });
+</script>
 
 </html>

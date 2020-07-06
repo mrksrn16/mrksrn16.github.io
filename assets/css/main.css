@@ -10781,21 +10781,6 @@ body {
   }
 }
 
-@font-face {
-  font-family: 'Gotham';
-  src: url("/assets/fonts/Gotham/GothamBook.ttf");
-}
-
-@font-face {
-  font-family: 'Gotham Bold';
-  src: url("/assets/fonts/Gotham/GothamBold.ttf");
-}
-
-@font-face {
-  font-family: 'Gotham Light';
-  src: url("/assets/fonts/Gotham/GothamLight.ttf");
-}
-
 a:hover {
   text-decoration: none;
 }
